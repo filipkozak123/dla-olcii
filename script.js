@@ -12,7 +12,7 @@ const ultimatePage = document.getElementById("ultimatePage");
 
 // muzyka
 const bgMusic = document.getElementById("bgMusic");
-bgMusic.volume = 0.01;
+bgMusic.volume = 0.1;
 const musicBtn = document.getElementById("musicBtn");
 
 let isPlaying = false;
