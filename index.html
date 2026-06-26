@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dla Olci ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="musicContainer">
+        <button id="musicBtn">🔊</button>
+        <audio id="bgMusic" src="nutka.mp3" loop></audio>
+    </div>
+
+    <section id="introPage" class="active-section">
+        <div class="intro-content">
+            <span class="sparkle">✨</span>
+            <h1>Mam dla Ciebie<br>małą niespodziankę...</h1>
+            <div class="heart-pulse">❤️</div>
+            <button id="startBtn">Kliknij, aby rozpocząć</button>
+        </div>
+    </section>
+
+    <section id="riddlePage" class="hidden">
+        <div class="riddle-box">
+            <div class="heart-pulse">❤️</div>
+            <h2>Jedno pytanko</h2>
+            <p class="question">Od kiedy jesteśmy oficjalnie razem?</p>
+            <div class="input-group">
+                <input type="text" id="passwordInput" placeholder="DDMMYYYY" maxlength="8">
+                <button id="loginBtn">Sprawdź ✨</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="errorPopup" class="popup-overlay hidden">
+        <div class="popup-content">
+            <div class="heart-pulse">❤️</div>
+            <h3>To nie ta data.</h3>
+            <p>Spróbuj jeszcze raz 😘</p>
+            <button id="closeErrorBtn">Spróbuj ponownie</button>
+        </div>
+    </div>
+
+    <section id="envelopePage" class="hidden">
+        <div class="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                <div class="letter" id="letter">
+                    <div id="typewriterText"></div>
+                    <button id="goToGalleryBtn" class="hidden">Przejdź do wspomnień 📸</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galleryPage" class="hidden">
+        <h2>Nasze Fotki 📸</h2>
+        
+        <div class="masonry-gallery">
+            <div class="masonry-item">
+                <img src="foto1.jpg" class="media-item" alt="">
+            </div>
+            <div class="masonry-item">
+                <video class="media-item" loop muted playsinline>
+                    <source src="video1.mp4" type="video/mp4">
+                </video>
+                <div class="video-icon">▶</div>
+            </div>
+            <div class="masonry-item">
+                <img src="foto2.jpg" class="media-item" alt="">
+            </div>
+            <div class="masonry-item">
+                <img src="foto3.jpg" class="media-item" alt="">
+            </div>
+            <div class="masonry-item">
+                <img src="foto4.jpg" class="media-item" alt="">
+            </div>
+            <div class="masonry-item">
+                <img src="foto5.jpg" class="media-item" alt="">
+            </div>
+             <div class="masonry-item">
+                <img src="foto6.jpg" class="media-item" alt="">
+            </div>
+            <div class="masonry-item">
+                <img src="foto7.jpg" class="media-item" alt="">
+            </div>
+            <div class="masonry-item">
+                <img src="foto8.jpg" class="media-item" alt="">
+            </div>
+
+
+
+            <div class="masonry-item hidden-photo">
+                <img src="foto9.jpg" class="media-item" alt="">
+            </div>
+            <div class="masonry-item hidden-photo"><img src="foto10.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto11.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto12.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto13.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto14.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto15.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto16.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto17.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto18.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto19.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto20.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto21.jpg" class="media-item" alt=""></div>
+
+            <div class="masonry-item hidden-photo">
+            <video class="media-item" loop muted playsinline>
+            <source src="video2.mp4" type="video/mp4">
+            </video>
+            <div class="video-icon">▶</div>
+            </div>
+
+            <div class="masonry-item hidden-photo"><img src="foto22.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto23.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto24.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto25.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto26.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto27.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto28.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto29.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto30.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto31.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto32.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto33.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto34.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto35.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto36.jpg" class="media-item" alt=""></div>
+
+            <div class="masonry-item hidden-photo">
+            <video class="media-item" loop muted playsinline>
+            <source src="video3.mp4" type="video/mp4">
+            </video>
+            <div class="video-icon">▶</div>
+            </div>
+
+            <div class="masonry-item hidden-photo"><img src="foto37.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto38.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto39.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto40.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto41.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto42.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto43.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto44.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto45.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto46.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto47.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto48.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto49.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto50.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto51.jpg" class="media-item" alt=""></div>
+
+            <div class="masonry-item hidden-photo">
+            <video class="media-item" loop muted playsinline>
+            <source src="video4.mp4" type="video/mp4">
+            </video>
+            <div class="video-icon">▶</div>
+            </div>
+
+            <div class="masonry-item hidden-photo"><img src="foto52.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto53.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto54.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto55.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto56.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto57.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto58.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto59.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto60.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto61.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto62.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto63.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto64.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto65.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto66.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto67.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto68.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto69.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto70.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto71.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto72.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto73.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto74.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto75.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto76.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto77.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto78.jpg" class="media-item" alt=""></div>
+            <div class="masonry-item hidden-photo"><img src="foto79.jpg" class="media-item" alt=""></div>
+
+            <div class="masonry-item hidden-photo">
+            <video class="media-item" loop muted playsinline>
+            <source src="video5.mp4" type="video/mp4">
+            </video>
+            <div class="video-icon">▶</div>
+            </div>
+        </div>
+
+        <div class="gallery-buttons">
+            <button id="loadMoreBtn">Zobacz więcej fotek 📸</button>
+            <button id="goToFinalBtn">Przejdź dalej ❤️</button>
+        </div>
+    </section>
+
+    <div id="lightbox" class="hidden">
+        <img id="lightboxImg" class="hidden" src="" alt="">
+        <video id="lightboxVideo" class="hidden" controls loop muted></video>
+    </div>
+
+    <section id="finalPage" class="hidden">
+        </section>
+
+    <div id="loveBurstPopup" class="popup-overlay hidden">
+        <div class="popup-content">
+            <h2>Niespodzianka! ❤️</h2>
+            <p>Poziom miłości rozwalił licznik! 💥 Kocham Cię najmocniej na świecie! 🥰💋</p>
+            <button id="closeBurstBtn">Odbierz buziaka 💋</button>
+        </div>
+    </div>
+
+    <div id="proposalQuestionPage" class="popup-overlay hidden">
+        <div class="popup-content evaluation-box">
+            <h2>Ostatnie pytanie</h2>
+            <h3>Czy zostaniesz ze mną na kolejne pół roku?</h3>
+            <div class="proposal-buttons">
+                <button id="yesBtn">❤️ TAK</button>
+                <button id="noBtn">🤍 NIE</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="ultimatePage" class="hidden">
+        <h1 class="olcia-title">Kocham Cię Olciu ❤️</h1>
+        
+        <div class="cracking-heart-container">
+            <p class="instruction">Kliknij serce...</p>
+            <div id="crackingHeart">
+                <div class="heart-half left"></div>
+                <div class="heart-half right"></div>
+            </div>
+            <div id="secretMessage" class="hidden">
+                <p>Dziękuję, że jesteś.</p>
+                <p>To dopiero początek naszej historii.</p>
+                <p>Kocham Cię ❤️</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
