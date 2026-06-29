@@ -189,7 +189,7 @@ function buildFinalPageLayout() {
     rightBox.classList.add("final-side-box");
     rightBox.innerHTML = `
         <h3>Dlaczego Cię kocham? 🤔</h3>
-        <p id="reasonText">Kliknij przycisk, aby wylosować</p>
+        <p id="reasonText">Kliknij przycisk aby wylosować</p>
         <button id="reasonBtn">Wylosuj powód ❤️</button>
     `;
 
