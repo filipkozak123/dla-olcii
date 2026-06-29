@@ -44,7 +44,7 @@ document.getElementById("startBtn").addEventListener("click", () => {
 /* =======================================================
    2. Hasło
    ======================================================= */
-const secretPassword = "31122025"; // Zmień na Waszą datę rocznicy
+const secretPassword = "31122025"; 
 const passwordInput = document.getElementById("passwordInput");
 
 document.getElementById("loginBtn").addEventListener("click", () => {
@@ -181,7 +181,7 @@ function buildFinalPageLayout() {
             <div class="counter-box"><span class="num" id="c-mins">0</span><span class="label">Min</span></div>
             <div class="counter-box"><span class="num" id="c-secs">0</span><span class="label">Sek</span></div>
         </div>
-        <button id="finalProposalBtn" style="margin-top:25px; display:none; border-color:#fff; color:#fff;">Dalej... 👀</button>
+        <button id="finalProposalBtn" style="margin-top:25px; display:none; border-color:#fff; color:#fff;">Dalej 👀</button>
     `;
 
     // KOLUMNA 3: losowanie
@@ -189,7 +189,7 @@ function buildFinalPageLayout() {
     rightBox.classList.add("final-side-box");
     rightBox.innerHTML = `
         <h3>Dlaczego Cię kocham? 🤔</h3>
-        <p id="reasonText">Kliknij przycisk, aby wylosować...</p>
+        <p id="reasonText">Kliknij przycisk, aby wylosować</p>
         <button id="reasonBtn">Wylosuj powód ❤️</button>
     `;
 
@@ -242,20 +242,20 @@ function initFinalFeatures() {
 
     const loveReasons = [
         "Bo przy Tobie czuję się sobą.",
-        "Za to, jak na mnie patrzysz.",
+        "Za to jak na mnie patrzysz.",
         "Za Twoje ciepło i opiekuńczość.",
-        "Za Twój piękny uśmiech, który potrafi naprawić mój najgorszy dzień.",
-        "Za Twoje wsparcie w każdym momencie, kiedy tego najbardziej potrzebuję.",
-        "Za Twoją mądrość i to, jak wiele się od Ciebie uczę każdego dnia.",
-        "Za Twoje dobre serce i to, z jaką empatią patrzysz na świat.",
-        "Za to, że potrafisz mnie uspokoić samym swoim przytuleniem.",
-        "Za wszystkie wspólne wspomnienia i te, które dopiero stworzymy.",
-        "Za to, że dbasz o mnie każdego dnia na milion małych sposobów.",
-        "Za to, że przy Tobie chcę być lepszym człowiekiem.",
-        "Za to, że jesteś moją najlepszą przyjaciółką i miłością w jednym.",
-        "Po prostu za to, że JESTEŚ. Bez Ciebie wszystko byłoby nudne.",
-        "Za to, że wierzysz we mnie nawet wtedy, kiedy ja sam w siebie wątpię.",
-        "Po prostu za to, że jesteś kompletnie moja."
+        "Za Twój piękny uśmiech który potrafi naprawić mój najgorszy dzień.",
+        "Za Twoje wsparcie w każdym momencie kiedy tego najbardziej potrzebuję.",
+        "Za Twoją mądrość i to jak wiele się od Ciebie uczę każdego dnia.",
+        "Za Twoje dobre serce i to z jaką empatią patrzysz na świat.",
+        "Za to że potrafisz mnie uspokoić samym swoim przytuleniem.",
+        "Za wszystkie wspólne wspomnienia i te które dopiero stworzymy.",
+        "Za to że dbasz o mnie każdego dnia na milion małych sposobów.",
+        "Za to że przy Tobie chcę być lepszym człowiekiem.",
+        "Za to że jesteś moją najlepszą przyjaciółką i miłością w jednym.",
+        "Po prostu za to że jesteś.",
+        "Za to że wierzysz we mnie nawet wtedy kiedy ja sam w siebie wątpię.",
+        "Za to że jesteś kompletnie moja."
     ]; 
 
     const reasonBtn = document.getElementById("reasonBtn");
@@ -266,7 +266,7 @@ function initFinalFeatures() {
             let index = Math.floor(Math.random() * loveReasons.length);
             reasonText.innerText = loveReasons[index];
             reasonText.style.opacity = 1;
-            reasonBtn.innerText = "Jeszcze raz... 🔁";
+            reasonBtn.innerText = "Jeszcze raz 🔁";
         }, 300);
     });
 }
